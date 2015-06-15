@@ -100,6 +100,7 @@ class Reservation: UIViewController, UITableViewDelegate, UITableViewDataSource{
         var dest = segue.destinationViewController as! InfoReservation
         let indexPath = self.tableView.indexPathForSelectedRow()
         dest.rowTitle = self.Num[indexPath!.row]
+        dest.rowDateReservation = self.Date[indexPath!.row]
     }
 
 }
